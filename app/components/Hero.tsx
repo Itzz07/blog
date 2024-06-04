@@ -24,7 +24,7 @@ const Hero = () => {
         </q>
         <div className="mt-5 text-end -ml-5  ">
           <h1 className="font-bold text-md md:text-lg">~ Joel K. Zimba</h1>
-          <p className="text-xs md:text-sm">Computer Systems Engineer</p>
+          <i className="text-xs md:text-sm">Computer Systems Engineer</i>
         </div>
         {/* <div className="flex justify-center">
           <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">

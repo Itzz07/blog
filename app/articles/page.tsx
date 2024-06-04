@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Articles",
+  description: "~ by itzz rio",
+};
+
 export default function Articles() {
   return (
     <div className=" mx-auto w-full py-32 lg:px-60">
