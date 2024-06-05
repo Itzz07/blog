@@ -1,4 +1,5 @@
-// 'use client'
+'use client'
+
 import "./../globals.css";
 import Image from "next/image";
 
@@ -36,13 +37,7 @@ const Hero = () => {
         </div> */}
       </div>
       <div className=" md:w-1/4 ">
-        {/* <img
-          className="object-cover object-center rounded"
-          alt="hero"
-          //   width={180}
-          //   height={37}
-          src="https://dummyimage.com/720x600"
-        /> */}
+       
         {/* <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
