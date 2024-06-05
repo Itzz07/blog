@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Articles() {
   return (
-    <div className=" mx-auto w-full py-32 lg:px-60">
+    <div className="mx-auto w-full py-32 lg:px-60">
       <div className="relative px-4 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-7xl text-center">

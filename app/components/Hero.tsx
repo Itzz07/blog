@@ -11,7 +11,7 @@ const Hero = () => {
         muted
         playsInline
         className="absolute top-0 right-0 w-full h-full object-cover"
-        src={require("/public/videos/blog.mp4")}
+        src={"public/videos/blog.mp4"}
       />
       <div className="lg:flex-grow w-full lg:w-3/4 text-white flex flex-col z-10">
         {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
