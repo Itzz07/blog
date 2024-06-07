@@ -52,14 +52,14 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>{" "}
                       </span>{" "}
-                      "September 5, 2022"
+                      &quot;September 5, 2022&quot;
                     </time>
                     <p className=" z-10 mt-2 text-justify text-sm text-zinc-600 dark:text-zinc-400">
-                      "Most companies try to stay ahead of the curve when it
-                      comes to visual design, but for Planetaria we needed to
+                      "&quot;ost companies try to stay ahead of the curve when
+                      it comes to visual design, but for Planetaria we needed to
                       create a brand that would still inspire us 100 years from
                       now when humanity has spread across our entire solar
-                      system."
+                      system&hellip;&quot;
                     </p>
                     <div
                       aria-hidden="true"
@@ -112,19 +112,19 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                       </span>
-                      "September 2, 2022"
+                      &quot;September 2, 2022&quot;
                     </time>
                     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                      "When you’re building a website for a company as ambitious
-                      as Planetaria, you need to make an impression. I wanted
-                      people to visit our website and see animations that looked
-                      more realistic than reality itself."
+                      &quot;When you’re building a website for a company as
+                      ambitious as Planetaria, you need to make an impression. I
+                      wanted people to visit our website and see animations that
+                      looked more realistic than reality itself.&quot;
                     </p>
                     <div
                       aria-hidden="true"
                       className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
                     >
-                      "Read article"
+                      &quot;Read article&quot;
                       <svg
                         viewBox="0 0 16 16"
                         fill="none"
@@ -168,15 +168,15 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                       </span>
-                      "July 14, 2022"
+                      &quot;July 14, 2022&quot;
                     </time>
                     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                      "When we released the first version of cosmOS last year,
-                      it was written in Go. Go is a wonderful programming
+                      &quot;When we released the first version of cosmOS last
+                      year, it was written in Go. Go is a wonderful programming
                       language, but it’s been a while since I’ve seen an article
                       on the front page of Hacker News about rewriting some
                       important tool in Go and I see articles on there about
-                      rewriting things in Rust every single week."
+                      rewriting things in Rust every single week.&quot;
                     </p>
                     <div
                       aria-hidden="true"
