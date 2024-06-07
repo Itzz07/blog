@@ -55,7 +55,7 @@ export default function Articles() {
                       &quot;September 5, 2022&quot;
                     </time>
                     <p className=" z-10 mt-2 text-justify text-sm text-zinc-600 dark:text-zinc-400">
-                      "&quot;Most companies try to stay ahead of the curve when
+                      &quot;Most companies try to stay ahead of the curve when
                       it comes to visual design, but for Planetaria we needed to
                       create a brand that would still inspire us 100 years from
                       now when humanity has spread across our entire solar
