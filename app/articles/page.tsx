@@ -52,7 +52,7 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>{" "}
                       </span>{" "}
-                      &quot;September 5, 2022&quot;
+                      &lsquo;September 5, 2022&rsquo;
                     </time>
                     <p className=" z-10 mt-2 text-justify text-sm text-zinc-600 dark:text-zinc-400">
                       &quot;Most companies try to stay ahead of the curve when
@@ -112,7 +112,7 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                       </span>
-                      &quot;September 2, 2022&quot;
+                      &lsquo;September 2, 2022&rsquo;
                     </time>
                     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                       &quot;When you&apos;re building a website for a company as
@@ -168,7 +168,7 @@ export default function Articles() {
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                       </span>
-                      &quot;July 14, 2022&quot;
+                      &lsquo;July 14, 2022&rsquo;
                     </time>
                     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                       &quot;When we released the first version of cosmOS last
