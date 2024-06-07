@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import { Metadata } from "next";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -150,21 +151,21 @@ export default function News() {
                 <div className="flex justify-between ">
                   <p className=" text-sm text-start ">{article.news_time}</p>
                   <p className=" text-sm text-end ">
-                    <a
+                    <Link
                       href={`news/newsCategory/${article.news_category}?url=${article.news_category_url}`}
                     >
                       {article.news_category}
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div className="flex justify-center hover:scale-110 transition duration-1000">
-                  <a
+                  <Link
                     href={`news/${article.news_title}?url=${article.news_title_url}`}
                   >
                     <h2 className="text-xl font-serif font-semibold">
                       {article.news_title}
                     </h2>
-                  </a>
+                  </Link>
                 </div>
                 {/* <div className="flex justify-start opacity-0 md:opacity-100 hover:scale-105 transition duration-500">
                   <p className=" text-xs text-justify w-5/6 0">

@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import { Metadata } from "next";
 
@@ -19,7 +19,7 @@ export default function Articles() {
               muted
               playsInline
               className="absolute object-center h-1/4 w-full right-0 object-cover "
-              src={require("/public/videos/blog_tech.mp4")}
+              src={"videos/blog_tech.mp4"}
             />
             <h1 className="relative py-4 text-3xl font-bold font-serif tracking-tight md:text-4xl text-slate-200">
               Articles on software design, AI tools, and all related Tech.

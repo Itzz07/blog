@@ -1,6 +1,8 @@
-"use client";
+"use client"
+
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface Article {
   news_category: string;
@@ -18,8 +20,8 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
 
   const searchParams = useSearchParams();
   const url = searchParams.get("url");
-  const apiUrl = "http://127.0.0.1:5000/articles";
-  
+  const apiUrl = "https://scraper-u7wz.onrender.com/articles";
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,7 +31,7 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
         }
         const jsonData = await response.json();
         console.log("Fetched data:", jsonData);
-        if ('error' in jsonData) {
+        if ("error" in jsonData) {
           throw new Error(jsonData.error); // Throw an error if API response contains an error message
         }
         if (Array.isArray(jsonData)) {
@@ -57,7 +59,7 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
             {params.newsId}
             {}
           </div>
-          <div className="grid grid-cols-1 p-10 md:px-30 xl:px-50 ">
+          <div className="grid grid-cols-1 p-10 md:px-30 xl:px-60 ">
             {error ? (
               <div>
                 <p>Error: {error}</p>
@@ -68,41 +70,43 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
                   key={index}
                   className="relative p-4 overflow-hidden rounded-lg shadow-md shadow-slate-600 dark:shadow-slate-100"
                 >
-                  <div className="flex flex-col ">
+                  <div className="flex flex-col px-1 md:px-20">
                     {/* Title */}
-                    <h2 className="text-2xl font-serif font-semibold text-center  px-4 py-2 md:py-0 ">
+                    <h2 className="text-xl md:text-2xl font-serif font-semibold text-center  px-4 py-2 md:py-0 ">
                       {article.news_title}
                     </h2>
                     {/* News Category and Date */}
-                    <div className="flex flex-row justify-between items-center ">
-                      <p className="text-sm text-start px-10 py-5">
-                        <a
-                          href={`news/newsCategory/${article.news_category}?url=${article.news_category_url}`}
+                    <div className="flex flex-row justify-between items-center py-5">
+                      <p className="text-sm text-start ">
+                        <Link
+                          href={`newsCategory/${article.news_category}?url=${article.news_category_url}`}
                           className="text-cyan-500 hover:text-cyan-700"
                         >
                           {article.news_category}
-                        </a>
+                        </Link>
                       </p>
                       <p className="text-sm text-end ">{article.news_date}</p>
                     </div>
                   </div>
                   {/* News Image */}
-                  <img
-                    className="object-cover w-full h-64 md:h-auto"
-                    src={article.news_image}
-                    alt={article.news_title}
-                  />
+                  <div className="px-2 md:px-20 mb-4">
+                    <img
+                      className="object-cover w-full h-64 md:h-auto shadow-md shadow-cyan-600 dark:shadow-cyan-100"
+                      src={article.news_image}
+                      alt={article.news_title}
+                    />
+                  </div>
                   {/* Paragraphs */}
-                  <div className="px-4 py-2">
+                  <div className="px-1 md:px-14 py-2">
                     {article.paragraphs.map((para, index) => (
-                      <p key={index} className="text-sm text-justify">
+                      <p key={index} className="text-sm text-justify mb-4 ">
                         {para.paragraph}
                       </p>
                     ))}
                   </div>
                 </div>
-              )))
-              }
+              ))
+            )}
             {typeof articles === "object" && !Array.isArray(articles) && (
               <div>
                 <p>The data is not an array.</p>

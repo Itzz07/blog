@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import "./../globals.css";
 import Image from "next/image";
@@ -12,7 +12,7 @@ const Hero = () => {
         muted
         playsInline
         className="absolute top-0 right-0 w-full h-full object-cover"
-        src={"public/videos/blog.mp4"}
+        src={"videos/blog.mp4"}
       />
       <div className="lg:flex-grow w-full lg:w-3/4 text-white flex flex-col z-10">
         {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -37,7 +37,6 @@ const Hero = () => {
         </div> */}
       </div>
       <div className=" md:w-1/4 ">
-       
         {/* <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"

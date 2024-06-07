@@ -1,4 +1,6 @@
-'use client';
+'use client'
+
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners";
@@ -19,7 +21,7 @@ export default function NewsCategoryId({
 }) {
   const searchParams = useSearchParams();
   const url = searchParams.get("url");
-  const apiUrl = "http://127.0.0.1:5000/category"; // Replace with your Flask API URL
+  const apiUrl = "https://scraper-u7wz.onrender.com/category"; // Replace with your Flask API URL
   const [articles, setArticles] = useState<Article[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -45,7 +47,7 @@ export default function NewsCategoryId({
           <h1 className="relative py-4 text-3xl font-bold font-serif tracking-tighter sm:text-4xl text-zinc-100 ">
             {params.newsCategoryId}
           </h1>
-          <p className="relative mb-16 text-base font-medium text-cyan-600 dark:text-cyan-400">
+          <p className="relative text-base font-medium text-cyan-600 dark:text-cyan-400">
             Highlight news - {params.newsCategoryId}.
           </p>
         </div>
@@ -55,7 +57,7 @@ export default function NewsCategoryId({
           <ClipLoader color="#36D7B7" loading={isLoading} size={70} />
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 gap-10 pt-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 gap-10 px-10 xl:px-40">
           {articles.map((article, index) => (
             <div
               key={index}
@@ -66,8 +68,33 @@ export default function NewsCategoryId({
                 src={article.image}
                 alt={article.title}
               />
+              <div className="absolute inset-0 flex flex-col justify-between md:px-4 px-10 py-2 bg-slate-900 bg-opacity-0 hover:bg-opacity-90 text-opacity-0 hover:text-opacity-90 transition duration-300">
+                <div className="flex justify-between ">
+                  {/* <p className=" text-sm text-start ">{article.time}</p> */}
+                  <p className=" text-sm text-end ">{article.category}</p>
+                </div>
+                <div className="flex justify-center hover:scale-110 transition duration-1000">
+                  <Link
+                    href={`../../news/${article.title}?url=${article.title_url}`}
+                  >
+                    <h2 className="text-xl font-serif font-semibold">
+                      {article.title}
+                    </h2>
+                  </Link>
+                </div>
+                {/* <div className="flex justify-start opacity-0 md:opacity-100 hover:scale-105 transition duration-500">
+                  <p className=" text-xs text-justify w-5/6 0">
+                    {article.paragraph}
+                  </p>
+                </div> */}
+              </div>
             </div>
           ))}
+          {typeof articles === "object" && !Array.isArray(articles) && (
+            <div>
+              <p>The data is not an array.</p>
+            </div>
+          )}
         </div>
       )}
     </>

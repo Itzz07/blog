@@ -1,6 +1,6 @@
-"use client";
-import "./../globals.css";
+"use client"
 
+import "./../globals.css";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -48,7 +48,7 @@ const Navbar = () => {
                         fill="none"
                         strokeWidth="2.5"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
+                        // strokeLinejoin="round"
                       />
                     </svg>
                   ) : (
@@ -64,7 +64,7 @@ const Navbar = () => {
                         fill="none"
                         strokeWidth="1.5"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
+                        // strokeLinejoin="round"
                       />
                     </svg>
                   )}
@@ -190,7 +190,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     strokeLinecap="round"
-                    strokeLinejoin="round"
+                    // strokeLinejoin="round"
                     aria-hidden="true"
                     className="h-6 w-6 fill-slate-100 stroke-slate-500 transition group-hover:fill-teal-200 group-hover:stroke-teal-400 dark:hidden
                       dark:group-hover:stroke-teal-500"

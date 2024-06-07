@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/speaker.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="body-wrapper z-10 h-screen w-screen">
         {/* <body className={inter.className}> */}
