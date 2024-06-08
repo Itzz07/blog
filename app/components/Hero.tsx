@@ -21,7 +21,8 @@ const Hero = () => {
           readymade gluten
         </h1> */}
         <q className="text-xl md:text-3xl font-serif font-extrabold  text-left">
-          If something works, that's good. How it works doesn't matter.
+          If something works, that&apos;s good. How it works doesn&apos;t
+          matter.
         </q>
         <div className="mt-5 text-end -ml-5  ">
           <h1 className="font-bold text-md md:text-lg">~ Joel K. Zimba</h1>
