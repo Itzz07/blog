@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Article {
   news_category: string;
@@ -90,7 +91,7 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
                   </div>
                   {/* News Image */}
                   <div className="px-2 md:px-20 mb-4">
-                    <img
+                    <Image
                       className="object-cover w-full h-64 md:h-auto shadow-md shadow-cyan-600 dark:shadow-cyan-100"
                       src={article.news_image}
                       alt={article.news_title}

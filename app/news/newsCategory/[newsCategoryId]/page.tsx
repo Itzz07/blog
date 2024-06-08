@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners";
@@ -63,7 +64,7 @@ export default function NewsCategoryId({
               key={index}
               className="relative overflow-hidden rounded-lg border text-white border-transparent border-t-cyan-500 border-t-2 shadow-md shadow-slate-600 dark:shadow-slate-100 aspect-video"
             >
-              <img
+              <Image
                 className="object-fill w-full h-full"
                 src={article.image}
                 alt={article.title}

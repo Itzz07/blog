@@ -2,6 +2,7 @@
 
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners";
 
@@ -142,7 +143,7 @@ export default function News() {
               key={index}
               className="relative overflow-hidden rounded-lg border text-white border-transparent border-t-cyan-500 border-t-2 shadow-md shadow-slate-600 dark:shadow-slate-100 aspect-video"
             >
-              <img
+              <Image
                 className="object-fill w-full h-full"
                 src={article.news_image}
                 alt={article.news_title}
