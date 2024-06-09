@@ -56,11 +56,11 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
     <>
       <div className="py-28 px-8  relative">
         <div className="grid grid-cols-1 ">
-          <div className="flex flex-col justify-center text-center">
+          {/* <div className="flex flex-col justify-center text-center text-wrap">
             {params.newsId}
             {}
-          </div>
-          <div className="grid grid-cols-1 p-10 md:px-30 xl:px-60 ">
+          </div> */}
+          <div className="grid grid-cols-1 px-1 md:px-30 xl:px-60 ">
             {error ? (
               <div>
                 <p>Error: {error}</p>
@@ -95,6 +95,8 @@ export default function NewsId({ params }: { params: { newsId: string } }) {
                       className="object-cover w-full h-64 md:h-auto shadow-md shadow-cyan-600 dark:shadow-cyan-100"
                       src={article.news_image}
                       alt={article.news_title}
+                      width="800"
+                      height="100"
                     />
                   </div>
                   {/* Paragraphs */}

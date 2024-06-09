@@ -25,10 +25,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="body-wrapper z-10 h-screen w-screen">
-        {/* <body className={inter.className}> */}
+      {/* <body className="body-wrapper z-10 h-screen w-screen"> */}
+      <body className={inter.className}>
         <Providers>
-          <main className="body-content overflow-y-scroll">
+          {/* <main className="body-content overflow-y-scroll"> */}
+          <main>
             <Navbar />
             {children}
             <Footer />

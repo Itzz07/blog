@@ -68,6 +68,8 @@ export default function NewsCategoryId({
                 className="object-fill w-full h-full"
                 src={article.image}
                 alt={article.title}
+                width="800"
+                height="100"
               />
               <div className="absolute inset-0 flex flex-col justify-between md:px-4 px-10 py-2 bg-slate-900 bg-opacity-0 hover:bg-opacity-90 text-opacity-0 hover:text-opacity-90 transition duration-300">
                 <div className="flex justify-between ">

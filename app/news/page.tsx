@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Metadata } from "next";
 import Link from "next/link";
@@ -55,7 +55,7 @@ export default function News() {
           All the latest Tech news, trends of different categories, covering
           from cyber security, AI all to the way to software development.
         </p>
-        <div className="relative flex flex-col items-center my-2 ">
+        <div className="relative flex flex-col items-center mt-10 md:my-1 ">
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm md:text-md font-bold text-slate-900 dark:text-slate-200 ">
             <li className="">
               <Link
@@ -146,6 +146,8 @@ export default function News() {
               <Image
                 className="object-fill w-full h-full"
                 src={article.news_image}
+                width="400"
+                height="10"
                 alt={article.news_title}
               />
               <div className="absolute inset-0 flex flex-col justify-between md:px-4 px-10 py-2 bg-slate-900 bg-opacity-0 hover:bg-opacity-90 text-opacity-0 hover:text-opacity-90 transition duration-300">
